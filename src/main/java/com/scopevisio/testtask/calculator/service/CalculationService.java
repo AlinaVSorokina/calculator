@@ -22,7 +22,7 @@ public class CalculationService {
         return premium;
     }
 
-    public BigDecimal calculatePremium(CalculationRequest calculationRequest) {
+    private BigDecimal calculatePremium(CalculationRequest calculationRequest) {
          return distanceFactorService.getDistanceFactor(calculationRequest.distance())
                  .multiply(carTypeFactorService.getCarTypeFactor(calculationRequest.carType()))
                  .multiply(regionFactorService.getRegionFactorByPostalCode(calculationRequest.postCode()))

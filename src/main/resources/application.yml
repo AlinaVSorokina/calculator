@@ -1,8 +1,4 @@
 spring:
-  cloud:
-    openfeign:
-      circuitbreaker:
-        enabled: true
   application:
     name: calculator
   h2:
@@ -25,7 +21,7 @@ calculation:
     PKW: 100
     LKW: 200
   region:
-    Baden-W�rttemberg: 1.1
+    Baden-Württemberg: 1.1
     Bayern: 1.1
     Berlin: 1.1
     Brandenburg: 1.2
@@ -40,5 +36,5 @@ calculation:
     Sachsen: 1.05
     Sachsen-Anhalt: 1.05
     Schleswig-Holstein: 1.05
-    Th\u00FCringen: 1.05
+    Thüringen: 1.05
 
