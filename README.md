@@ -47,3 +47,11 @@ Um den Dienst zu starten, müssen drei Teile gestartet werden:
 services catalog und calculation verwenden die integrierte H2-Datenbank. 
 H2-Konsole verfügbar unter '/console/'.
 Die Zugriffs-URL kann dem Log unter 'Database available at' entnommen werden.
+
+**Design:**
+
+service-discovery - eureka service discovery Service
+catalog - service mit Referenzinformationen. jetzt - Regionale Informationen
+calculation - Prämienberechnung durchführen. REST-API-Aufruf an den Katalogdienst, um Informationen über Regionen zu erhalten.
+
+![](/assets/services.jpg)
