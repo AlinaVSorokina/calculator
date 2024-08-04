@@ -40,9 +40,9 @@ status 404: Wenn die Region nicht über die Postleitzahl gefunden werden konnte
 **Deployment:**
 
 Um den Dienst zu starten, müssen drei Teile gestartet werden:
-1. discovery Service 
-2. catalog Service (defaut port: 9090)
-3. calculation Service (defaut port: 8080)
+1. [Service Discovery Service](https://github.com/AlinaVSorokina/service-discovery) 
+2. [Catalog Service](https://github.com/AlinaVSorokina/catalog)
+3. then calculation Service can be started (defaut port: 8080)
 
 services catalog und calculation verwenden die integrierte H2-Datenbank. 
 H2-Konsole verfügbar unter '/console/'.
